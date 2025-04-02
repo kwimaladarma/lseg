@@ -172,3 +172,24 @@
 [2025-04-03 00:26:38] Total users attempted: 9
 [2025-04-03 00:26:38] Users created successfully: 0
 [2025-04-03 00:26:38] Users failed: 9
+[2025-04-03 00:39:47] ********** User creation process started. **********
+[2025-04-03 00:39:47] Row 2: Attempt 1: Exception creating user alice@example.com: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /api/create_user (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014B9F14B770>: Failed to resolve 'example.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-04-03 00:39:49] Row 2: Attempt 2: Exception creating user alice@example.com: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /api/create_user (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014B9F123B10>: Failed to resolve 'example.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-04-03 00:39:51] Row 2: Attempt 3: Exception creating user alice@example.com: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /api/create_user (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014B9F220550>: Failed to resolve 'example.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-04-03 00:39:51] Row 3: Skipped due to missing fields (email): {'name': 'Bob', 'email': '', 'role': 'user'}
+[2025-04-03 00:39:51] Row 4: Attempt 1: Exception creating user charlie@example.com: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /api/create_user (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014B9F123ED0>: Failed to resolve 'example.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-04-03 00:39:53] Row 4: Attempt 2: Exception creating user charlie@example.com: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /api/create_user (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014B9F123610>: Failed to resolve 'example.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-04-03 00:39:55] Row 4: Attempt 3: Exception creating user charlie@example.com: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /api/create_user (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014B9F123C50>: Failed to resolve 'example.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-04-03 00:39:55] Row 5: Skipped due to missing fields (role): {'name': 'Gayan', 'email': 'gayan@example.com', 'role': ''}
+[2025-04-03 00:39:55] Row 6: Skipped due to missing fields (name): {'name': '', 'email': 'chiran@example.com', 'role': 'user'}
+[2025-04-03 00:39:55] Row 7: Skipped due to invalid email format: Sithum$example.com
+[2025-04-03 00:39:55] Row 8: Skipped due to invalid role 'guest'. Must be one of moderator, admin, user
+[2025-04-03 00:39:55] Row 9: Skipped empty line.
+[2025-04-03 00:39:55] Row 10: Skipped due to invalid name format: 'Vihanga&777'
+[2025-04-03 00:39:55] Row 11: Attempt 1: Exception creating user fathima@example.com: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /api/create_user (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014B9F122AD0>: Failed to resolve 'example.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-04-03 00:39:57] Row 11: Attempt 2: Exception creating user fathima@example.com: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /api/create_user (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014B9F122FD0>: Failed to resolve 'example.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-04-03 00:39:59] Row 11: Attempt 3: Exception creating user fathima@example.com: HTTPSConnectionPool(host='example.com', port=443): Max retries exceeded with url: /api/create_user (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014B9F122C10>: Failed to resolve 'example.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-04-03 00:39:59] ********** User creation process finished. **********
+[2025-04-03 00:39:59] Total users attempted: 9
+[2025-04-03 00:39:59] Users created successfully: 0
+[2025-04-03 00:39:59] Users failed: 9
