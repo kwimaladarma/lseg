@@ -1,5 +1,6 @@
 import csv
 import requests
+import re
 from datetime import datetime
 
 LOG_FILE = "runlogs.log"
@@ -7,6 +8,7 @@ CSV_FILE = "users.csv"
 API_URL = "https://example.com/api/create_user"
 
 REQUIRED_FIELDS = ["name", "email", "role"]
+EMAIL_REGEX = r"^[\w\.-]+@[\w\.-]+\.\w+$"
 
 # Add timestamp to logs
 def log_message(message):
@@ -16,12 +18,18 @@ def log_message(message):
         log_file.write(full_message + '\n')
     print(full_message)
 
-# Validate required fields
+# Validate required fields and email format
 def is_valid_user(row):
     missing = [field for field in REQUIRED_FIELDS if not row.get(field)]
     if missing:
         log_message(f"Skipped row due to missing fields ({', '.join(missing)}): {row}")
         return False
+
+    email = row.get("email", "")
+    if not re.match(EMAIL_REGEX, email):
+        log_message(f"Skipped row due to invalid email format: {email}")
+        return False
+
     return True
 
 # Create user via API
@@ -43,7 +51,7 @@ def create_users(file_path):
     success = 0
     failed = 0
 
-    log_message("User creation process started.")
+    log_message("********** User creation process started. **********")
 
     with open(file_path, 'r') as f:
         reader = csv.DictReader(f)
@@ -57,7 +65,7 @@ def create_users(file_path):
             else:
                 failed += 1
 
-    log_message("User creation process finished.")
+    log_message("********** User creation process finished. **********")
     log_message(f"Total users attempted: {total}")
     log_message(f"Users created successfully: {success}")
     log_message(f"Users failed: {failed}")
