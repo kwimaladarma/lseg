@@ -131,3 +131,44 @@
 [2025-04-03 00:21:00] Total users attempted: 9
 [2025-04-03 00:21:00] Users created successfully: 0
 [2025-04-03 00:21:00] Users failed: 9
+[2025-04-03 00:23:46] ********** User creation process started. **********
+[2025-04-03 00:23:47] Row 2: Attempt 1: Failed to create user alice@example.com: HTTP 403
+[2025-04-03 00:23:50] Row 2: Attempt 2: Failed to create user alice@example.com: HTTP 403
+[2025-04-03 00:23:53] Row 2: Attempt 3: Failed to create user alice@example.com: HTTP 403
+[2025-04-03 00:23:53] Row 3: Skipped due to missing fields (email): {'name': 'Bob', 'email': '', 'role': 'user'}
+[2025-04-03 00:23:54] Row 4: Attempt 1: Failed to create user charlie@example.com: HTTP 403
+[2025-04-03 00:23:56] Row 4: Attempt 2: Failed to create user charlie@example.com: HTTP 403
+[2025-04-03 00:23:59] Row 4: Attempt 3: Failed to create user charlie@example.com: HTTP 403
+[2025-04-03 00:23:59] Row 5: Skipped due to missing fields (role): {'name': 'Gayan', 'email': 'gayan@example.com', 'role': ''}
+[2025-04-03 00:23:59] Row 6: Skipped due to missing fields (name): {'name': '', 'email': 'chiran@example.com', 'role': 'user'}
+[2025-04-03 00:23:59] Row 7: Skipped due to invalid email format: Sithum$example.com
+[2025-04-03 00:23:59] Row 8: Skipped due to invalid role 'guest'. Must be one of user, moderator, admin
+[2025-04-03 00:23:59] Row 9: Skipped due to invalid name format: 'Vihanga&777'
+[2025-04-03 00:24:00] Row 10: Attempt 1: Failed to create user fathima@example.com: HTTP 403
+[2025-04-03 00:24:03] Row 10: Attempt 2: Failed to create user fathima@example.com: HTTP 403
+[2025-04-03 00:24:06] Row 10: Attempt 3: Failed to create user fathima@example.com: HTTP 403
+[2025-04-03 00:24:06] ********** User creation process finished. **********
+[2025-04-03 00:24:06] Total users attempted: 9
+[2025-04-03 00:24:06] Users created successfully: 0
+[2025-04-03 00:24:06] Users failed: 9
+[2025-04-03 00:26:18] ********** User creation process started. **********
+[2025-04-03 00:26:19] Row 2: Attempt 1: Failed to create user alice@example.com: HTTP 403
+[2025-04-03 00:26:22] Row 2: Attempt 2: Failed to create user alice@example.com: HTTP 403
+[2025-04-03 00:26:25] Row 2: Attempt 3: Failed to create user alice@example.com: HTTP 403
+[2025-04-03 00:26:25] Row 3: Skipped due to missing fields (email): {'name': 'Bob', 'email': '', 'role': 'user'}
+[2025-04-03 00:26:26] Row 4: Attempt 1: Failed to create user charlie@example.com: HTTP 403
+[2025-04-03 00:26:29] Row 4: Attempt 2: Failed to create user charlie@example.com: HTTP 403
+[2025-04-03 00:26:32] Row 4: Attempt 3: Failed to create user charlie@example.com: HTTP 403
+[2025-04-03 00:26:32] Row 5: Skipped due to missing fields (role): {'name': 'Gayan', 'email': 'gayan@example.com', 'role': ''}
+[2025-04-03 00:26:32] Row 6: Skipped due to missing fields (name): {'name': '', 'email': 'chiran@example.com', 'role': 'user'}
+[2025-04-03 00:26:32] Row 7: Skipped due to invalid email format: Sithum$example.com
+[2025-04-03 00:26:32] Row 8: Skipped due to invalid role 'guest'. Must be one of moderator, admin, user
+[2025-04-03 00:26:32] Row 9: Skipped empty line.
+[2025-04-03 00:26:32] Row 10: Skipped due to invalid name format: 'Vihanga&777'
+[2025-04-03 00:26:33] Row 11: Attempt 1: Failed to create user fathima@example.com: HTTP 403
+[2025-04-03 00:26:36] Row 11: Attempt 2: Failed to create user fathima@example.com: HTTP 403
+[2025-04-03 00:26:38] Row 11: Attempt 3: Failed to create user fathima@example.com: HTTP 403
+[2025-04-03 00:26:38] ********** User creation process finished. **********
+[2025-04-03 00:26:38] Total users attempted: 9
+[2025-04-03 00:26:38] Users created successfully: 0
+[2025-04-03 00:26:38] Users failed: 9
