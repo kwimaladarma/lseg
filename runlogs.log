@@ -57,3 +57,38 @@
 [2025-04-03 00:03:06] Total users attempted: 6
 [2025-04-03 00:03:06] Users created successfully: 0
 [2025-04-03 00:03:06] Users failed: 6
+[2025-04-03 00:07:04] ********** User creation process started. **********
+[2025-04-03 00:07:05] Failed to create user alice@example.com: HTTP 403
+[2025-04-03 00:07:05] Row 3: Skipped due to missing fields (email): {'name': 'Bob', 'email': '', 'role': 'user'}
+[2025-04-03 00:07:06] Failed to create user charlie@example.com: HTTP 403
+[2025-04-03 00:07:06] Row 5: Skipped due to missing fields (role): {'name': 'Gayan', 'email': 'gayan@example.com', 'role': ''}
+[2025-04-03 00:07:06] Row 6: Skipped due to missing fields (name): {'name': '', 'email': 'chiran@example.com', 'role': 'user'}
+[2025-04-03 00:07:06] Row 7: Skipped due to invalid email format: Sithum$example.com
+[2025-04-03 00:07:06] ********** User creation process finished. **********
+[2025-04-03 00:07:06] Total users attempted: 6
+[2025-04-03 00:07:06] Users created successfully: 0
+[2025-04-03 00:07:06] Users failed: 6
+[2025-04-03 00:07:42] ********** User creation process started. **********
+[2025-04-03 00:07:43] Failed to create user alice@example.com: HTTP 403
+[2025-04-03 00:07:43] Row 3: Skipped due to missing fields (email): {'name': 'Bob', 'email': '', 'role': 'user'}
+[2025-04-03 00:07:44] Failed to create user charlie@example.com: HTTP 403
+[2025-04-03 00:07:44] Row 5: Skipped due to missing fields (role): {'name': 'Gayan', 'email': 'gayan@example.com', 'role': ''}
+[2025-04-03 00:07:44] Row 6: Skipped due to missing fields (name): {'name': '', 'email': 'chiran@example.com', 'role': 'user'}
+[2025-04-03 00:07:44] Row 7: Skipped due to invalid email format: Sithum$example.com
+[2025-04-03 00:07:44] Row 8: Skipped due to invalid role 'guest'. Must be one of admin, moderator, user
+[2025-04-03 00:07:44] ********** User creation process finished. **********
+[2025-04-03 00:07:44] Total users attempted: 7
+[2025-04-03 00:07:44] Users created successfully: 0
+[2025-04-03 00:07:44] Users failed: 7
+[2025-04-03 00:09:18] ********** User creation process started. **********
+[2025-04-03 00:09:19] Row 2: Failed to create user alice@example.com: HTTP 403
+[2025-04-03 00:09:19] Row 3: Skipped due to missing fields (email): {'name': 'Bob', 'email': '', 'role': 'user'}
+[2025-04-03 00:09:20] Row 4: Failed to create user charlie@example.com: HTTP 403
+[2025-04-03 00:09:20] Row 5: Skipped due to missing fields (role): {'name': 'Gayan', 'email': 'gayan@example.com', 'role': ''}
+[2025-04-03 00:09:20] Row 6: Skipped due to missing fields (name): {'name': '', 'email': 'chiran@example.com', 'role': 'user'}
+[2025-04-03 00:09:20] Row 7: Skipped due to invalid email format: Sithum$example.com
+[2025-04-03 00:09:20] Row 8: Skipped due to invalid role 'guest'. Must be one of user, admin, moderator
+[2025-04-03 00:09:20] ********** User creation process finished. **********
+[2025-04-03 00:09:20] Total users attempted: 7
+[2025-04-03 00:09:20] Users created successfully: 0
+[2025-04-03 00:09:20] Users failed: 7
