@@ -1,0 +1,6 @@
+name,email,role
+Alice,alice@example.com,admin
+Bob,,user
+Charlie,charlie@example.com,moderator
+Gayan,gayan@example.com,
+,chiran@example.com,user

@@ -1,0 +1,18 @@
+[2025-04-02 23:36:24] Failed to create user alice@example.com: HTTP 403
+[2025-04-02 23:36:24] Skipped row due to missing fields (email): {'name': 'Bob', 'email': '', 'role': 'user'}
+[2025-04-02 23:36:25] Failed to create user charlie@example.com: HTTP 403
+[2025-04-02 23:41:20] Failed to create user alice@example.com: HTTP 403
+[2025-04-02 23:41:20] Skipped row due to missing fields (email): {'name': 'Bob', 'email': '', 'role': 'user'}
+[2025-04-02 23:41:20] Failed to create user charlie@example.com: HTTP 403
+[2025-04-02 23:41:20] Skipped row due to missing fields (role): {'name': 'Gayan', 'email': 'gayan@example.com', 'role': ''}
+[2025-04-02 23:41:20] Skipped row due to missing fields (name): {'name': '', 'email': 'chiran@example.com', 'role': 'user'}
+[2025-04-02 23:47:41] Failed to create user alice@example.com: HTTP 403
+[2025-04-02 23:47:41] Skipped row due to missing fields (email): {'name': 'Bob', 'email': '', 'role': 'user'}
+[2025-04-02 23:47:42] Failed to create user charlie@example.com: HTTP 403
+[2025-04-02 23:47:42] Skipped row due to missing fields (role): {'name': 'Gayan', 'email': 'gayan@example.com', 'role': ''}
+[2025-04-02 23:47:42] Skipped row due to missing fields (name): {'name': '', 'email': 'chiran@example.com', 'role': 'user'}
+[2025-04-02 23:49:55] Failed to create user alice@example.com: HTTP 403
+[2025-04-02 23:49:55] Skipped row due to missing fields (email): {'name': 'Bob', 'email': '', 'role': 'user'}
+[2025-04-02 23:49:56] Failed to create user charlie@example.com: HTTP 403
+[2025-04-02 23:49:56] Skipped row due to missing fields (role): {'name': 'Gayan', 'email': 'gayan@example.com', 'role': ''}
+[2025-04-02 23:49:56] Skipped row due to missing fields (name): {'name': '', 'email': 'chiran@example.com', 'role': 'user'}
